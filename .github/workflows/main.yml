@@ -47,7 +47,4 @@ name: artifacts
 env:        
 USERNAME: ${{ secrets.username }}        
 PASSWORD: ${{ secrets.password }}      
-run: |    
-artifactName=$(ls *.jar | head -1) 
-mvn mule: 
-deploy -Dmule.artifact=$artifactName -Danypoint.userName="$USERNAME" -Danypoint.password="$PASSWORD"
+run: | artifactName=$(ls *.jar | head -1) mvn mule: deploy -Dmule.artifact=$artifactName -Danypoint.userName="$USERNAME" -Danypoint.password="$PASSWORD"
