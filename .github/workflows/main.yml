@@ -10,7 +10,7 @@ runs-on: ubuntu-latest
 steps:    
 – uses: actions/checkout@v2    
 – uses: actions/cache@v1      
- with:        
+with:        
    path: ~/.m2/repository        
    key: ${{ runner.os }}-maven-${{ hashFiles('**/sys-sf-prestige/pom.xml') }}        
    restore-keys: |          
