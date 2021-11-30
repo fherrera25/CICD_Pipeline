@@ -2,7 +2,7 @@
 name: TestCICD Pipeline UCCU
 on:
   pull_request:
-    branches: [dev]
+    branches: [master]
 jobs:
   build:
     runs-on: ubuntu-latest
