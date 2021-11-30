@@ -4,7 +4,7 @@ on:
     branches:  
       - main
 env: 
-   MAVEN_OPTS: "-Dmaven.repo.local=${{ github.workspace }}/mulesoft-github-actions"
+   MAVEN_OPTS: "-Dmaven.repo.local=${{ github.workspace }}/CICD_Pipeline/sys-sf-prestige/"
 jobs:
   build:
     runs-on: ubuntu-latest
